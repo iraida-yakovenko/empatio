@@ -1,0 +1,18 @@
+main.works.clearfix
+    mixin worksItem(worksItemAbout, worksItemName, itemClass)
+        div.works-item(class!= itemClass)
+            a.work-item-link(href="#")
+                div.work-item-text
+                    p.work-item-text--about= worksItemAbout
+                    h2.work-item-text--name= worksItemName
+                    p.work-item-text--details Подробнее  
+                        span → 
+    +worksItem('Маркетплейс ресторанов', 'BANANSI', 'work-item--banansi')
+    +worksItem('Лендинг продукта', 'SBI', 'work-item--sbi1')
+    +worksItem('Личный кабинет', 'AMIR PAY', 'work-item--pay')
+    +worksItem('Лендинг продукта', 'SBI', 'work-item--sbi2')
+    +worksItem('Сайт английских красок', 'KRASKA-STORE', 'work-item--kraska')
+    +worksItem('Личный кабинет', 'AMIR CAPITAL', 'work-item--capital')
+
+    
+                

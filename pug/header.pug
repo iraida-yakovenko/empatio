@@ -1,0 +1,15 @@
+header.header
+    .logo.left
+        img(src="img/group-2.svg", alt="Empatio", width='120', height='59')
+    .header-info.center
+        h1 UX/UI ДИЗАЙН
+        p UX/UI дизайн e-commerce сайтов и финтех-сервисов с упором на удобство использования, эстетику и конверсию.
+    nav.menu.right
+        span.menu-open
+            span.menu-open--icon
+        span.menu-close
+        ul.menu-list
+            each value, index in {'РАБОТЫ' : 'catalog', 'О НАС' : 'about', 'КОТНАКТЫ' : 'contact'}
+                li
+                    a(href= "/" + value + ".html")= index
+    

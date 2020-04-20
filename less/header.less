@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Extenda-40Hecto';
+    src: url('../fonts/Extenda-40-Hecto-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Luciada';
+    src: url('../fonts/lucida-grande.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@fontBold: "Extenda-40Hecto";
+@fontNormal: "Roboto";
+@fontIcon: "Luciada";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: @fontNormal, @fontBold, sans-serif;
+}
+h1, h2, h3, p, ul, li{
+margin: 0px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.headerFooter(){
+    display: flex;
+    justify-content: space-between;
+    font-family: @fontBold;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.header, .footer{
+    .headerFooter; 
+}
+
+.logo{
+    padding-top: 32px;
+    padding-left: 80px;
+}
+.left, .right{
+    width: 27.5%;
+    box-sizing: border-box;
+}
+
+.header-info{
+    padding-top: 200px;
+    h1{
+        font-size: 210px;
+        font-weight: normal;
+    }
+    p{
+        margin: 0;
+        opacity: 0.4;
+        font-family: @fontNormal;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: -0.18px;
+
+    }
+}
+.center{
+    max-width: 45%;
+    padding-top: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.menu{
+    padding-left: 48px;
+        .menu-open{
+            position: absolute;
+            top: 51px;
+            right: 88px;
+            width: 48px;
+            height: 48px;
+            padding-top: 14px;
+            box-sizing: border-box;
+            background-color: white;
+            vertical-align: middle;
+                .menu-open--icon{
+                display: block;
+                margin: auto;
+                width: 20px;
+                height: 5px;
+                background-color: rgb(0, 0, 0);
+                border-top: 4px solid rgb(0, 0, 0);
+                border-bottom: 4px solid rgb(0, 0, 0);
+                padding-top: 4px;
+                padding-bottom: 4px;
+                background-clip: content-box;
+                cursor: pointer;
+                }
+            
+        }
+        .menu-close{
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            background: url(../img/group-4.svg) no-repeat 0 0;
+            right: 88px;
+            top: 51px;
+            z-index: 2;
+        }
+        ul{
+            visibility: hidden;
+            height: 750px;
+            padding-top: 190px;
+            padding-left: 80px;
+            background-color: rgb(240, 61, 88);
+            font-size: 120px;
+            font-weight: normal;
+            li{
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                }
+        }
+        }
+}
